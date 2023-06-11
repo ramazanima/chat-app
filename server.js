@@ -6,7 +6,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var pusher = new Pusher({ appId: "APP_ID", key: "APP_KEY", secret:  "APP_SECRET", cluster: "APP_CLUSTER" });
+var pusher = new Pusher({ appId: "1616729", key: "ef6699c4c49fe000c6ac", secret:  "df823d3b50e5ab27697e", cluster: "us2"});
 
 app.post('/message', function(req, res) {
   var message = req.body.message;
